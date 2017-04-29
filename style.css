@@ -16,7 +16,7 @@
    .logo {
        background-image: url(image/logo.png);
        background-repeat: no-repeat;
-       float: left;
+       /*       float: left;*/
        height: 120px;
        width: 120px;
        position: relative;
@@ -29,12 +29,13 @@
        list-style-type: none;
    }
    
-   a {
-       /*    text-decoration: none;*/
+   .menu {
+       margin-left: 740px;
+       margin-top: -70px;
    }
    
-   .menu {
-       /*    margin-left: 200px*/
+   .menu>ul>li a:hover {
+       background-color: #ffea00;
    }
    
    .menu li {
@@ -48,12 +49,9 @@
        line-height: 70px;
        text-decoration: none;
        display: inline-block;
-       /*       position: relative;*/
-       /*       top: 45px;*/
-       /*       left: 740px;*/
-       /*       width: 100%;*/
-       /*       height: 70px;*/
-       /*       margin-left: 60px;*/
+       width: 60%;
+/*       height: 70px;*/
+       margin-left: 90px;
    }
    
    .menuToggle {
@@ -68,19 +66,27 @@
            top: 160px;
            width: 100%;
            text-align: center;
-           background: #eee;
+           background: #f6f6f6;
+           margin-left: 0px;
+           margin-top: 0px;
+       }
+       .menu li a {
+           margin-left: 0px;
+           width: 100%;
        }
        .logo {
            position: relative;
            left: 10px;
        }
+       
        .menu li {
            float: none;
        }
+       
        .menuToggle {
            display: inline-block;
            position: absolute;
-           top: 70px;
-           left: 300px;
+           top: 60px;
+           left: 390px;
        }
    }
