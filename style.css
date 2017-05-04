@@ -67,6 +67,101 @@
        display: none;
        cursor: pointer;
    }
+
+
+   /*слайдер*/
+
+   .slideshow-container {
+       max-width: 1630px;
+       position: relative;
+       margin: auto;
+   }
+   
+   .mySlides>h1 {
+       position: absolute;
+       top: 10%;
+       left: 30%;
+       font-size: 4.375vw;
+   }
+   
+   .prev,
+   .next {
+       cursor: pointer;
+       position: absolute;
+       top: 45%;
+       width: auto;
+       margin-top: -22px;
+       padding: 22px 14px;
+       background-color: #000000;
+       color: white;
+       font-weight: normal;
+       font-size: 32px;
+       /*    transition: 0.6s ease;*/
+       /*    border-radius: 0 3px 3px 0;*/
+   }
+   
+   .next {
+       right: 1px;
+       /*    border-radius: 3px 0 0 3px;*/
+   }
+   
+   .prev:hover,
+   .next:hover {
+       background-color: rgba(0, 0, 0, 0.3);
+   }
+   
+   .mySlides {
+       text-align: center;
+       max-height: 700px;
+   }
+   
+   .text {
+       color: #f2f2f2;
+       font-size: 22px;
+       padding: 8px 12px;
+   }
+   
+   .dot {
+       cursor: pointer;
+       height: 25px;
+       width: 25px;
+       background-color: #414146;
+       display: inline-block;
+       transition: background-color:0.6s ease;
+   }
+   
+   .active,
+   .dot:hover {
+       background-color: #ffea00;
+       box-sizing: border-box;
+       border: 3px solid #414146;
+   }
+   
+   .fade {
+       -webkit-animation-name: fade;
+       -webkit-animation-duration: 1s;
+       animation-name: fade;
+       animation-duration: 1s;
+   }
+   
+   .navMenu {
+       position: absolute;
+       left: 46%;
+       bottom: 6%;
+   }
+   /*@-webkit-keyframes fade{
+	0%{opacity:0.4;}
+	100%{opacity:1;}
+}*/
+   
+   @keyframes fade {
+       0% {
+           opacity: 0.4;
+       }
+       100% {
+           opacity: 1;
+       }
+   }
    
    @media screen and (max-width: 1025px) {
        .menu {
@@ -77,7 +172,7 @@
            text-align: center;
            background: #f6f6f6;
            padding: 0;
-
+           z-index: 1;
        }
        .menu>ul {
            padding: 0;
@@ -87,26 +182,26 @@
            margin: 0;
            padding: 0;
        }
-       
        .logo {
            position: relative;
            left: 10px;
        }
-       
        .menu li {
            float: none;
            margin: 0;
+           z-index: 100;
        }
-       
        .menuToggle {
            float: right;
            margin-top: 55px;
            margin-right: 30px;
            display: inline-block;
        }
-       
        .logo {
            margin-left: 30px;
            position: relative;
+       }
+       .slideshow-container {
+           z-index: 0;
        }
    }
