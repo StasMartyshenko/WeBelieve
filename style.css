@@ -3,9 +3,11 @@
        src: url(fonts/CodeLight.otf);
    }
    
-   body {
-/*       margin: 0;*/
+   @font-face {
+       font-family: CenturyGothic;
+       src: url(fonts/CenturyGothic.TTF)
    }
+  
    
    .wrapper {
        max-width: 1630px;
@@ -68,20 +70,80 @@
        display: none;
        cursor: pointer;
    }
-
    /*---------------Slides-------------------*/
    
    .slideshow-container {
-/*       max-width: 1630px;*/
        position: relative;
        margin: auto;
    }
    
-   .mySlides>h1 {
+   .textSlides>h1 {
+       font: bold 4.375vw CenturyGothic;
+       line-height: 1.1em;
+       text-transform: uppercase;
+       background-color: #ffea00;
        position: absolute;
-       top: 10%;
-       left: 30%;
-       font-size: 4.375vw;
+       top: 7.7vw;
+       left: 10.5vw;
+       padding: 0 0.6vw;
+   }
+   
+   .textSlides1>h1 {
+       font: bold 4.375vw CenturyGothic;
+       line-height: 1.1em;
+       text-transform: uppercase;
+       background-color: #ffea00;
+       position: absolute;
+       top: 13vw;
+       left: 10.5vw;
+       padding: 0 0.6vw;
+   }
+   
+   .textSlidesAbout1 {
+       font: 1.5vw CenturyGothic;
+       line-height: 1.4em;
+       background-color: #414146;
+       color: #ffffff;
+       position: absolute;
+       top: 18.5vw;
+       left: 10.5vw;
+       padding: 0 0.4vw;
+   }
+   
+   .textSlidesAbout2 {
+       font: 1.5vw CenturyGothic;
+       line-height: 1.4em;
+       background-color: #414146;
+       color: #ffffff;
+       position: absolute;
+       top: 20.7vw;
+       left: 10.5vw;
+       padding: 0 0.4vw;
+   }
+   
+   .textSlidesAbout3 {
+       font: 1.5vw CenturyGothic;
+       line-height: 1.4em;
+       background-color: #414146;
+       color: #ffffff;
+       position: absolute;
+       top: 22.9vw;
+       left: 10.5vw;
+       padding: 0 0.4vw;
+   }
+   
+   .mySlides>input {
+       cursor: pointer;
+       font: 1.5vw CenturyGothic;
+       position: absolute;
+       top: 28vw;
+       left: 30.8vw;
+       background: #000000;
+       color: #ffffff;
+       border-color: black;
+       border-bottom-color: #ffea00;
+       border-bottom-width: 3px;
+       padding: 0.1vw 1.4vw;
    }
    
    .mySlides>img {
@@ -92,21 +154,17 @@
    .next {
        cursor: pointer;
        position: absolute;
-       top: 47%;
+       top: 45%;
        width: auto;
-/*       margin-top: -22px;*/
-       padding: 1.2vw 0.5vw;
+       padding: 1.5vw 0.6vw;
        background-color: #000000;
        color: white;
        font-weight: normal;
        font-size: 2vw;
-       /*    transition: 0.6s ease;*/
-       /*    border-radius: 0 3px 3px 0;*/
    }
    
    .next {
        right: 1px;
-       /*    border-radius: 3px 0 0 3px;*/
    }
    
    .prev:hover,
@@ -162,7 +220,10 @@
            opacity: 1;
        }
    }
-   
+
+
+/*----------------@media*------------------*/
+
    @media screen and (max-width: 1025px) {
        .menu {
            display: none;
@@ -189,7 +250,6 @@
        .menu li {
            float: none;
            margin: 0;
-/*           z-index: 100;*/
        }
        .menuToggle {
            float: right;
@@ -203,5 +263,65 @@
        }
        .slideshow-container {
            z-index: 0;
+       }
+   }
+   
+   @media (min-width: 1630px) {
+       .textSlides>h1 {
+           font: bold 70px CenturyGothic;
+           line-height: 1.1em;
+           text-transform: uppercase;
+           background-color: #ffea00;
+           position: absolute;
+           top: 18.25%;
+           left: 10.7%;
+           padding: 0 0.6vw;
+       }
+       .textSlides1>h1 {
+           font: bold 70px CenturyGothic;
+           line-height: 1.1em;
+           text-transform: uppercase;
+           background-color: #ffea00;
+           position: absolute;
+           top: 30.3%;
+           left: 10.7%;
+           padding: 0 0.6vw;
+       }
+       .textSlidesAbout1 {
+           font: 24px CenturyGothic;
+           line-height: 1.4em;
+           background-color: #414146;
+           color: #ffffff;
+           position: absolute;
+           top: 43%;
+           left: 10.7%;
+           padding: 0 0.4vw;
+       }
+       .textSlidesAbout2 {
+           font: 24px CenturyGothic;
+           line-height: 1.4em;
+           background-color: #414146;
+           color: #ffffff;
+           position: absolute;
+           top: 48%;
+           left: 10.7%;
+           padding: 0 0.4vw;
+       }
+       .textSlidesAbout3 {
+           font: 24px CenturyGothic;
+           line-height: 1.4em;
+           background-color: #414146;
+           color: #ffffff;
+           position: absolute;
+           top: 53%;
+           left: 10.7%;
+           padding: 0 0.4vw;
+       }
+       .mySlides>input {
+           font: 24px  CenturyGothic;
+           position: absolute;
+           top: 65%;
+           left: 30.8%;
+           padding: 0.1vw 1.4vw;
        }
    }
