@@ -4,7 +4,7 @@
    }
    
    body {
-       margin: 0;
+/*       margin: 0;*/
    }
    
    .wrapper {
@@ -68,7 +68,8 @@
        display: none;
        cursor: pointer;
    }
-   /*---------------слайдер-------------------*/
+
+   /*---------------Slides-------------------*/
    
    .slideshow-container {
 /*       max-width: 1630px;*/
@@ -91,10 +92,10 @@
    .next {
        cursor: pointer;
        position: absolute;
-       top: 45%;
+       top: 47%;
        width: auto;
-       margin-top: -22px;
-       padding: 1.1vw 11px;
+/*       margin-top: -22px;*/
+       padding: 1.2vw 0.5vw;
        background-color: #000000;
        color: white;
        font-weight: normal;
@@ -149,8 +150,8 @@
    
    .navMenu {
        position: absolute;
-       left: 46%;
-       bottom: 6%;
+       left: 45%;
+       bottom: 4%;
    }
    
    @keyframes fade {
@@ -188,7 +189,7 @@
        .menu li {
            float: none;
            margin: 0;
-           z-index: 100;
+/*           z-index: 100;*/
        }
        .menuToggle {
            float: right;

@@ -1,3 +1,5 @@
+//---------navigation-------------
+
 $(function () {
 
     $('.menuToggle').on('click', function () {
@@ -14,7 +16,9 @@ $(function () {
 
 });
 
-//слайдер
+
+//-----------Slides--------------
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
