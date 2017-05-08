@@ -7,17 +7,17 @@
        font-family: CenturyGothic;
        src: url(fonts/CenturyGothic.TTF)
    }
-  
    
    .wrapper {
        max-width: 1630px;
        margin: auto;
+       background-color: #f6f6f6;
    }
    /*------------------navigation-----------------*/
    
    .navigation {
        height: 160px;
-       background-color: #f6f6f6;
+       /*       background-color: #f6f6f6;*/
    }
    
    .logo {
@@ -220,10 +220,93 @@
            opacity: 1;
        }
    }
+   /*   -----------------Design----------------*/
+   
+   .textDesign>h2 {
+       font: 500 2.1875vw CenturyGothic;
+       /*       font: 500 35px CenturyGothic;*/
+       color: #424147;
+       text-transform: uppercase;
+       display: flex;
+       justify-content: center;
+       line-height: 1.6vw;
+       margin-top: 5.0vw;
+   }
+   
+   .textDesign>p {
+       font: 500 2.1875vw CenturyGothic;
+       color: #424147;
+       display: flex;
+       justify-content: center;
+       line-height: 1.6vw;
+       margin-top: 2.5vw;
+   }
+   
+   .redesigning {
+       width: 250px;
+       height: 285px;
+   }
+   
+   .redesigningImage {
+       height: 200px;
+   }
+   
+   .redesigningText {
+       background-color: #414146;
+       width: 100%;
+       height: 85px;
+       font: 20px CodeLight;
+       color: #d9d9da;
+       letter-spacing: 2px;
+   }
+   
+   .redesigningText>p {
+       padding-top: 16px;
+       padding-left: 16px;
+   }
+   
+   .webDesign {
+       font: 10px CodeLight;
+       color: #d9d9da;
+       display: flex;
+       padding-left: 127px;
+       padding-top: 7px;
+   }
+   
+   .webDesign>a {
+       color: #ffea00;
+       padding-left: 3px;
+       text-decoration: none;
+   }
+   
+   .corner {
+       position: relative;
+       left: 210px;
+       width: 8px;
+       height: 8px;
+       background-color: #414146;
+       margin-top: -4px;
+       transform: rotate(45deg);
+   }
 
 
-/*----------------@media*------------------*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*----------------@media*------------------*/
+   
    @media screen and (max-width: 1025px) {
        .menu {
            display: none;
@@ -318,7 +401,7 @@
            padding: 0 0.4vw;
        }
        .mySlides>input {
-           font: 24px  CenturyGothic;
+           font: 24px CenturyGothic;
            position: absolute;
            top: 65%;
            left: 30.8%;
