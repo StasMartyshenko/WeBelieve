@@ -17,7 +17,6 @@
    
    .navigation {
        max-height: 160px;
-       /*       background-color: #f6f6f6;*/
    }
    
    .logo {
@@ -243,9 +242,19 @@
        margin-top: 2.5vw;
    }
    
+   .pictDesign {
+       margin-top: 55px;
+       /*       margin-bottom: 90px;*/
+       /*       margin: 0 -25px;*/
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+   }
+   
    .redesigning {
        width: 250px;
        height: 285px;
+       margin: 10px 25px;
    }
    
    .redesigningImage {
@@ -286,9 +295,73 @@
        width: 8px;
        height: 8px;
        background-color: #414146;
-       margin-top: -4px;
+       top: -4px;
        transform: rotate(45deg);
    }
+   
+   .webDevelopment {
+       margin: 10px 25px;
+   }
+   
+   .webDevelopmentImg {
+       height: 200px;
+   }
+   
+   .webDevelopmentImg>h2 {
+       font: 20px CodeLight;
+       color: black;
+       position: relative;
+       top: -30px;
+       text-align: center;
+   }
+   
+   .webDevelopmentText>p {
+       font: 13px CenturyGothic;
+       padding-top: 29px;
+       text-align: center;
+   }
+   
+   .webDevelopment {
+       width: 250px;
+       height: 285px;
+   }
+   
+   .webDevelopmentText {
+       background-color: #414146;
+       width: 100%;
+       height: 85px;
+       color: #d9d9da;
+   }
+   /*--------------------ourWork----------------*/
+.ourWorkButton {
+    padding-top: 7vw;
+    padding-left: 44vw;
+}
+
+   .ourWorkButton>input {
+       cursor: pointer;
+       font: 1.4vw CenturyGothic;
+       background: #424147;
+       color: #ffea00;
+       padding: 0.15vw 1.4vw;
+       margin: 0 auto;
+   }
+
+.ourWorkText>p {
+    font: bold 1.2vw CenturyGothic;
+    text-align: center;
+    padding-top: 2vw;
+}
+
+
+
+
+
+
+
+
+
+
    /*----------------@media------------------*/
    
    @media screen and (max-width: 1024px) {
