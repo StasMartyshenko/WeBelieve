@@ -1,477 +1,526 @@
-   @font-face {
-       font-family: CodeLight;
-       src: url(fonts/CodeLight.otf);
-   }
-   
-   @font-face {
-       font-family: CenturyGothic;
-       src: url(fonts/CenturyGothic.TTF)
-   }
-   
-   .wrapper {
-       max-width: 1630px;
-       margin: auto;
-       background-color: #f6f6f6;
-   }
-   /*------------------navigation-----------------*/
-   
-   .navigation {
-       max-height: 160px;
-   }
-   
-   .logo {
-       float: left;
-       background-image: url(image/logo.png);
-       background-repeat: no-repeat;
-       height: 120px;
-       width: 120px;
-       margin-left: 115px;
-       margin-top: 20px;
-   }
-   
-   ul,
-   li {
-       list-style-type: none;
-       margin: 0;
-   }
-   
-   .menu {
-       float: right;
-       overflow: hidden;
-       padding: 45px 0;
-       margin-right: 70px;
-   }
-   
-   .menu>ul>li a:hover {
-       background-color: #ffea00;
-   }
-   
-   .menu :first-child {
-       margin-left: 0;
-   }
-   
-   .menu li {
-       float: left;
-       margin: 0 30px;
-   }
-   
-   .menu li a {
-       font: bold 16px CodeLight;
-       color: #313131;
-       text-align: center;
-       line-height: 70px;
-       text-decoration: none;
-       display: inline-block;
-       padding: 0 10px;
-   }
-   
-   .menuToggle {
-       display: none;
-       cursor: pointer;
-   }
-   /*---------------Slides-------------------*/
-   
-   .slideshow-container {
-       position: relative;
-       margin: auto;
-       clear: both;
-   }
-   
-   .textSlides>h1 {
-       font: bold 4.375vw CenturyGothic;
-       line-height: 1.1em;
-       text-transform: uppercase;
-       background-color: #ffea00;
-       position: absolute;
-       top: 7.7vw;
-       left: 10.5vw;
-       padding: 0 0.6vw;
-   }
-   
-   .textSlides1>h1 {
-       font: bold 4.375vw CenturyGothic;
-       line-height: 1.1em;
-       text-transform: uppercase;
-       background-color: #ffea00;
-       position: absolute;
-       top: 13vw;
-       left: 10.5vw;
-       padding: 0 0.6vw;
-   }
-   
-   .textSlidesAbout1 {
-       font: 1.5vw CenturyGothic;
-       line-height: 1.4em;
-       background-color: #414146;
-       color: #ffffff;
-       position: absolute;
-       top: 18.5vw;
-       left: 10.5vw;
-       padding: 0 0.4vw;
-   }
-   
-   .textSlidesAbout2 {
-       font: 1.5vw CenturyGothic;
-       line-height: 1.4em;
-       background-color: #414146;
-       color: #ffffff;
-       position: absolute;
-       top: 20.7vw;
-       left: 10.5vw;
-       padding: 0 0.4vw;
-   }
-   
-   .textSlidesAbout3 {
-       font: 1.5vw CenturyGothic;
-       line-height: 1.4em;
-       background-color: #414146;
-       color: #ffffff;
-       position: absolute;
-       top: 22.9vw;
-       left: 10.5vw;
-       padding: 0 0.4vw;
-   }
-   
-   .mySlides>input {
-       cursor: pointer;
-       font: 1.5vw CenturyGothic;
-       position: absolute;
-       top: 28vw;
-       left: 30.8vw;
-       background: #000000;
-       color: #ffffff;
-       border-color: black;
-       border-bottom-color: #ffea00;
-       border-bottom-width: 3px;
-       padding: 0.1vw 1.4vw;
-   }
-   
-   .mySlides>img {
-       width: 100%;
-   }
-   
-   .prev,
-   .next {
-       cursor: pointer;
-       position: absolute;
-       top: 45%;
-       width: auto;
-       padding: 1.5vw 0.6vw;
-       background-color: #000000;
-       color: white;
-       font-weight: normal;
-       font-size: 2vw;
-   }
-   
-   .next {
-       right: 1px;
-   }
-   
-   .prev:hover,
-   .next:hover {
-       background-color: rgba(0, 0, 0, 0.3);
-   }
-   
-   .mySlides {
-       text-align: center;
-       max-height: 700px;
-   }
-   
-   .text {
-       color: #f2f2f2;
-       font-size: 22px;
-       padding: 8px 12px;
-   }
-   
-   .dot {
-       cursor: pointer;
-       height: 1.5vw;
-       width: 1.5vw;
-       background-color: #414146;
-       display: inline-block;
-       transition: background-color:0.6s ease;
-   }
-   
-   .active,
-   .dot:hover {
-       background-color: #ffea00;
-       box-sizing: border-box;
-       border: 3px solid #414146;
-   }
-   
-   .fade {
-       -webkit-animation-name: fade;
-       -webkit-animation-duration: 1s;
-       animation-name: fade;
-       animation-duration: 1s;
-   }
-   
-   .navMenu {
-       position: absolute;
-       left: 45%;
-       bottom: 4%;
-   }
-   
-   @keyframes fade {
-       0% {
-           opacity: 0.4;
+       @font-face {
+           font-family: CodeLight;
+           src: url(fonts/CodeLight.otf);
        }
-       100% {
-           opacity: 1;
+       
+       @font-face {
+           font-family: CenturyGothic;
+           src: url(fonts/CenturyGothic.TTF)
        }
-   }
-   /*   -----------------Design----------------*/
-   
-   .textDesign>h2 {
-       font: 500 2.1875vw CenturyGothic;
-       /*       font: 500 35px CenturyGothic;*/
-       color: #424147;
-       text-transform: uppercase;
-       display: flex;
-       justify-content: center;
-       line-height: 1.6vw;
-       margin-top: 5.0vw;
-   }
-   
-   .textDesign>p {
-       font: 500 2.1875vw CenturyGothic;
-       color: #424147;
-       display: flex;
-       justify-content: center;
-       line-height: 1.6vw;
-       margin-top: 2.5vw;
-   }
-   
-   .pictDesign {
-       margin-top: 55px;
-       /*       margin-bottom: 90px;*/
-       /*       margin: 0 -25px;*/
-       display: flex;
-       justify-content: center;
-       flex-wrap: wrap;
-   }
-   
-   .redesigning {
-       width: 250px;
-       height: 285px;
-       margin: 10px 25px;
-   }
-   
-   .redesigningImage {
-       height: 200px;
-   }
-   
-   .redesigningText {
-       background-color: #414146;
-       width: 100%;
-       height: 85px;
-       font: 20px CodeLight;
-       color: #d9d9da;
-       letter-spacing: 2px;
-   }
-   
-   .redesigningText>p {
-       padding-top: 16px;
-       padding-left: 16px;
-   }
-   
-   .webDesign {
-       font: 10px CodeLight;
-       color: #d9d9da;
-       display: flex;
-       padding-left: 127px;
-       padding-top: 7px;
-   }
-   
-   .webDesign>a {
-       color: #ffea00;
-       padding-left: 3px;
-       text-decoration: none;
-   }
-   
-   .corner {
-       position: relative;
-       left: 210px;
-       width: 8px;
-       height: 8px;
-       background-color: #414146;
-       top: -4px;
-       transform: rotate(45deg);
-   }
-   
-   .webDevelopment {
-       margin: 10px 25px;
-   }
-   
-   .webDevelopmentImg {
-       height: 200px;
-   }
-   
-   .webDevelopmentImg>h2 {
-       font: 20px CodeLight;
-       color: black;
-       position: relative;
-       top: -30px;
-       text-align: center;
-   }
-   
-   .webDevelopmentText>p {
-       font: 13px CenturyGothic;
-       padding-top: 29px;
-       text-align: center;
-   }
-   
-   .webDevelopment {
-       width: 250px;
-       height: 285px;
-   }
-   
-   .webDevelopmentText {
-       background-color: #414146;
-       width: 100%;
-       height: 85px;
-       color: #d9d9da;
-   }
-   /*--------------------ourWork----------------*/
-.ourWorkButton {
-    padding-top: 7vw;
-    padding-left: 44vw;
-}
-
-   .ourWorkButton>input {
-       cursor: pointer;
-       font: 1.4vw CenturyGothic;
-       background: #424147;
-       color: #ffea00;
-       padding: 0.15vw 1.4vw;
-       margin: 0 auto;
-   }
-
-.ourWorkText>p {
-    font: bold 1.2vw CenturyGothic;
-    text-align: center;
-    padding-top: 2vw;
-}
-
-
-
-
-
-
-
-
-
-
-   /*----------------@media------------------*/
-   
-   @media screen and (max-width: 1024px) {
+       
+       .wrapper {
+           max-width: 1630px;
+           margin: auto;
+           background-color: #f6f6f6;
+       }
+       /*------------------navigation-----------------*/
+       
+       .navigation {
+           max-height: 160px;
+       }
+       
+       .logo {
+           float: left;
+           background-image: url(image/logo.png);
+           background-repeat: no-repeat;
+           height: 120px;
+           width: 120px;
+           margin-left: 115px;
+           margin-top: 20px;
+       }
+       
+       ul,
+       li {
+           list-style-type: none;
+           margin: 0;
+       }
+       
        .menu {
-           display: none;
-           position: absolute;
-           top: 87px;
-           width: 100%;
-           text-align: center;
-           background: #f6f6f6;
-           padding: 0;
-           z-index: 1;
-       }
-       .menu>ul {
-           padding: 0;
-       }
-       .menu li a {
-           width: 100%;
-           margin: 0;
-           padding: 0;
-       }
-       .logo {
-           position: relative;
-           left: 10px;
-           height: 60px;
-           width: 60px;
-           background-size: contain;
-       }
-       .menu li {
-           float: none;
-           margin: 0;
-       }
-       .menuToggle {
            float: right;
-           margin-top: 35px;
-           margin-right: 30px;
+           overflow: hidden;
+           padding: 45px 0;
+           margin-right: 70px;
+       }
+       
+       .menu>ul>li a:hover {
+           background-color: #ffea00;
+       }
+       
+       .menu :first-child {
+           margin-left: 0;
+       }
+       
+       .menu li {
+           float: left;
+           margin: 0 30px;
+       }
+       
+       .menu li a {
+           font: bold 16px CodeLight;
+           color: #313131;
+           text-align: center;
+           line-height: 70px;
+           text-decoration: none;
            display: inline-block;
+           padding: 0 10px;
        }
-       .logo {
-           margin-left: 30px;
-           padding-bottom: 16px;
-           position: relative;
+       
+       .menuToggle {
+           display: none;
+           cursor: pointer;
        }
+       /*---------------Slides-------------------*/
+       
        .slideshow-container {
-           z-index: 0;
+           position: relative;
+           margin: auto;
+           clear: both;
        }
-       .prev,
-       .next {
-           padding: 3vw 1.2vw;
-           font-size: 4vw;
-           top: 38%;
-       }
-   }
-   
-   @media (min-width: 1630px) {
+       
        .textSlides>h1 {
-           font: bold 70px CenturyGothic;
+           font: bold 4.375vw CenturyGothic;
            line-height: 1.1em;
            text-transform: uppercase;
            background-color: #ffea00;
            position: absolute;
-           top: 18.25%;
-           left: 10.7%;
+           top: 7.7vw;
+           left: 10.5vw;
            padding: 0 0.6vw;
        }
+       
        .textSlides1>h1 {
-           font: bold 70px CenturyGothic;
+           font: bold 4.375vw CenturyGothic;
            line-height: 1.1em;
            text-transform: uppercase;
            background-color: #ffea00;
            position: absolute;
-           top: 30.3%;
-           left: 10.7%;
+           top: 13vw;
+           left: 10.5vw;
            padding: 0 0.6vw;
        }
+       
        .textSlidesAbout1 {
-           font: 24px CenturyGothic;
+           font: 1.5vw CenturyGothic;
            line-height: 1.4em;
            background-color: #414146;
            color: #ffffff;
            position: absolute;
-           top: 43%;
-           left: 10.7%;
+           top: 18.5vw;
+           left: 10.5vw;
            padding: 0 0.4vw;
        }
+       
        .textSlidesAbout2 {
-           font: 24px CenturyGothic;
+           font: 1.5vw CenturyGothic;
            line-height: 1.4em;
            background-color: #414146;
            color: #ffffff;
            position: absolute;
-           top: 48%;
-           left: 10.7%;
+           top: 20.7vw;
+           left: 10.5vw;
            padding: 0 0.4vw;
        }
+       
        .textSlidesAbout3 {
-           font: 24px CenturyGothic;
+           font: 1.5vw CenturyGothic;
            line-height: 1.4em;
            background-color: #414146;
            color: #ffffff;
            position: absolute;
-           top: 53%;
-           left: 10.7%;
+           top: 22.9vw;
+           left: 10.5vw;
            padding: 0 0.4vw;
        }
+       
        .mySlides>input {
-           font: 24px CenturyGothic;
+           cursor: pointer;
+           font: 1.5vw CenturyGothic;
            position: absolute;
-           top: 65%;
-           left: 30.8%;
+           top: 28vw;
+           left: 30.8vw;
+           background: #000000;
+           color: #ffffff;
+           border-color: black;
+           border-bottom-color: #ffea00;
+           border-bottom-width: 3px;
            padding: 0.1vw 1.4vw;
        }
-   }
+       
+       .mySlides>img {
+           width: 100%;
+       }
+       
+       .prev,
+       .next {
+           cursor: pointer;
+           position: absolute;
+           top: 45%;
+           width: auto;
+           padding: 1.5vw 0.6vw;
+           background-color: #000000;
+           color: white;
+           font-weight: normal;
+           font-size: 2vw;
+       }
+       
+       .next {
+           right: 1px;
+       }
+       
+       .prev:hover,
+       .next:hover {
+           background-color: rgba(0, 0, 0, 0.3);
+       }
+       
+       .mySlides {
+           text-align: center;
+           max-height: 700px;
+       }
+       
+       .text {
+           color: #f2f2f2;
+           font-size: 22px;
+           padding: 8px 12px;
+       }
+       
+       .dot {
+           cursor: pointer;
+           height: 1.5vw;
+           width: 1.5vw;
+           background-color: #414146;
+           display: inline-block;
+           transition: background-color:0.6s ease;
+       }
+       
+       .active,
+       .dot:hover {
+           background-color: #ffea00;
+           box-sizing: border-box;
+           border: 3px solid #414146;
+       }
+       
+       .fade {
+           -webkit-animation-name: fade;
+           -webkit-animation-duration: 1s;
+           animation-name: fade;
+           animation-duration: 1s;
+       }
+       
+       .navMenu {
+           position: absolute;
+           left: 45%;
+           bottom: 4%;
+       }
+       
+       @keyframes fade {
+           0% {
+               opacity: 0.4;
+           }
+           100% {
+               opacity: 1;
+           }
+       }
+       /*   -----------------Design----------------*/
+       
+       .textDesign>h2 {
+           font: 500 2.1875vw CenturyGothic;
+           /*       font: 500 35px CenturyGothic;*/
+           color: #424147;
+           text-transform: uppercase;
+           display: flex;
+           justify-content: center;
+           line-height: 1.6vw;
+           margin-top: 5.0vw;
+       }
+       
+       .textDesign>p {
+           font: 500 2.1875vw CenturyGothic;
+           color: #424147;
+           display: flex;
+           justify-content: center;
+           line-height: 1.6vw;
+           margin-top: 2.5vw;
+       }
+       
+       .pictDesign {
+           margin-top: 55px;
+           /*       margin-bottom: 90px;*/
+           /*       margin: 0 -25px;*/
+           display: flex;
+           justify-content: center;
+           flex-wrap: wrap;
+       }
+       
+       .redesigning {
+           width: 250px;
+           height: 285px;
+           margin: 10px 25px;
+       }
+       
+       .redesigningImage {
+           height: 200px;
+       }
+       
+       .redesigningText {
+           background-color: #414146;
+           width: 100%;
+           height: 85px;
+           font: 20px CodeLight;
+           color: #d9d9da;
+           letter-spacing: 2px;
+       }
+       
+       .redesigningText>p {
+           padding-top: 16px;
+           padding-left: 16px;
+       }
+       
+       .webDesign {
+           font: 10px CodeLight;
+           color: #d9d9da;
+           display: flex;
+           padding-left: 127px;
+           padding-top: 7px;
+       }
+       
+       .webDesign>a {
+           color: #ffea00;
+           padding-left: 3px;
+           text-decoration: none;
+       }
+       
+       .corner {
+           position: relative;
+           left: 210px;
+           width: 8px;
+           height: 8px;
+           background-color: #414146;
+           top: -4px;
+           transform: rotate(45deg);
+       }
+       
+       .webDevelopment {
+           margin: 10px 25px;
+       }
+       
+       .webDevelopmentImg {
+           height: 200px;
+       }
+       
+       .webDevelopmentImg>h2 {
+           font: 20px CodeLight;
+           color: black;
+           position: relative;
+           top: -30px;
+           text-align: center;
+       }
+       
+       .webDevelopmentText>p {
+           font: 13px CenturyGothic;
+           padding-top: 29px;
+           text-align: center;
+       }
+       
+       .webDevelopment {
+           width: 250px;
+           height: 285px;
+       }
+       
+       .webDevelopmentText {
+           background-color: #414146;
+           width: 100%;
+           height: 85px;
+           color: #d9d9da;
+       }
+       /*--------------------ourWork----------------*/
+       
+       .ourWorkButton {
+           padding-top: 7vw;
+           padding-left: 44vw;
+       }
+       
+       .ourWorkButton>input {
+           cursor: pointer;
+           font: 1.4vw CenturyGothic;
+           background: #424147;
+           color: #ffea00;
+           padding: 0.15vw 1.4vw;
+           margin: 0 auto;
+       }
+       
+       .ourWorkText>p {
+           font: bold 1.2vw CenturyGothic;
+           text-align: center;
+           padding-top: 2vw;
+       }
+       
+       .working>img {
+           max-width: 100%;
+           height: auto;
+           padding-top: 3.4vw;
+           padding-bottom: 7vw;
+       }
+       /*----------------@media------------------*/
+       
+       @media screen and (max-width: 1024px) {
+           .menu {
+               display: none;
+               position: absolute;
+               top: 87px;
+               width: 100%;
+               text-align: center;
+               background: #f6f6f6;
+               padding: 0;
+               z-index: 1;
+           }
+           .menu>ul {
+               padding: 0;
+           }
+           .menu li a {
+               width: 100%;
+               margin: 0;
+               padding: 0;
+           }
+           .logo {
+               position: relative;
+               left: 10px;
+               height: 60px;
+               width: 60px;
+               background-size: contain;
+           }
+           .menu li {
+               float: none;
+               margin: 0;
+           }
+           .menuToggle {
+               float: right;
+               margin-top: 35px;
+               margin-right: 30px;
+               display: inline-block;
+           }
+           .logo {
+               margin-left: 30px;
+               padding-bottom: 16px;
+               position: relative;
+           }
+           .slideshow-container {
+               z-index: 0;
+           }
+           .prev,
+           .next {
+               padding: 3vw 1.2vw;
+               font-size: 4vw;
+               top: 38%;
+           }
+       }
+       
+       @media (min-width: 1630px) {
+           .textSlides>h1 {
+               font: bold 70px CenturyGothic;
+               line-height: 1.1em;
+               text-transform: uppercase;
+               background-color: #ffea00;
+               position: absolute;
+               top: 18.25%;
+               left: 10.7%;
+               padding: 0 0.6vw;
+           }
+           .textSlides1>h1 {
+               font: bold 70px CenturyGothic;
+               line-height: 1.1em;
+               text-transform: uppercase;
+               background-color: #ffea00;
+               position: absolute;
+               top: 30.3%;
+               left: 10.7%;
+               padding: 0 0.6vw;
+           }
+           .textSlidesAbout1 {
+               font: 24px CenturyGothic;
+               line-height: 1.4em;
+               background-color: #414146;
+               color: #ffffff;
+               position: absolute;
+               top: 43%;
+               left: 10.7%;
+               padding: 0 0.4vw;
+           }
+           .textSlidesAbout2 {
+               font: 24px CenturyGothic;
+               line-height: 1.4em;
+               background-color: #414146;
+               color: #ffffff;
+               position: absolute;
+               top: 48%;
+               left: 10.7%;
+               padding: 0 0.4vw;
+           }
+           .textSlidesAbout3 {
+               font: 24px CenturyGothic;
+               line-height: 1.4em;
+               background-color: #414146;
+               color: #ffffff;
+               position: absolute;
+               top: 53%;
+               left: 10.7%;
+               padding: 0 0.4vw;
+           }
+           .mySlides>input {
+               font: 24px CenturyGothic;
+               position: absolute;
+               top: 65%;
+               left: 30.8%;
+               padding: 0.1vw 1.4vw;
+           }
+           .ourWorkButton {
+               display: flex;
+               padding-left: 0vw;
+           }
+           .ourWorkButton>input {
+               cursor: pointer;
+               font: 20px CenturyGothic;
+               background: #424147;
+               color: #ffea00;
+               padding: 0.15vw 1.4vw;
+               margin: 0 auto;
+           }
+           .textDesign>h2 {
+               font: 500 35px CenturyGothic;
+           }
+           .textDesign>p {
+               font: 500 35px CenturyGothic;
+               text-align: center;
+           }
+           .ourWorkText>p {
+               font: bold 18px CenturyGothic;
+           }
+       }
+       
+       @media (max-width: 900px) {
+           .ourWorkButton>input {
+               cursor: pointer;
+               font: 15px CenturyGothic;
+               background: #424147;
+               color: #ffea00;
+               padding: 0.15vw 1.4vw;
+               margin: 0 auto;
+           }
+           .ourWorkButton {
+               display: flex;
+               padding-top: 7vw;
+               padding-left: 0vw;
+           }
+           .ourWorkText>p {
+               font: bold 12px CenturyGothic;
+           }
+           .textDesign>h2 {
+               font: 500 3vw CenturyGothic;
+           }
+           .textDesign>p {
+               font: 500 3vw CenturyGothic;
+               text-align: center;
+           }
+           .pictDesign {
+               margin-top: 17px;
+           }
+       }
