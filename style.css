@@ -364,12 +364,81 @@
        
        .sl {
            max-width: 1500px;
-           margin: 20px auto;
-/*           margin-bottom: 3.4vw;*/
+           margin: 1vw auto;
+           /*           margin-bottom: 3.4vw;*/
        }
        
        .slick-slide img {
            margin: auto;
+       }
+       /*----------------------Footer-----------------*/
+       
+       .aboutFooter {
+           background: #414146;
+           display: flex;
+           /*    justify-content: center;*/
+           flex-wrap: wrap;
+           /*   text-align: center;*/
+       }
+       
+       .aboutUs {
+           width: 400px;
+           height: 500px;
+           padding: 0 71.6px;
+           font-family: CenturyGothic;
+           color: #ffffff;
+       }
+       
+       .aboutUs>h3 {
+           font-size: 18px;
+           padding: 19px 0;
+       }
+       
+       .aboutUs>p {
+           font-size: 13px;
+           padding-bottom: 40px;
+       }
+       
+       .aboutUs>img {
+           width: 100%;
+           margin-top: 40px;
+       }
+       
+       .aboutUs>input {
+           cursor: pointer;
+           font: 15px CenturyGothic;
+           /*           position: absolute;*/
+           /*           top: 28vw;*/
+           /*           left: 30.8vw;*/
+           background: #000000;
+           color: #ffffff;
+           border-color: black;
+           border-bottom-color: #ffea00;
+           border-bottom-width: 3px;
+           padding: 0.1vw 0.9vw;
+           margin-bottom: 30px;
+       }
+       
+       .latestTweets {
+           width: 480px;
+           height: 500px;
+       }
+       
+       .colorYellow {
+           color: yellow;
+       }
+       
+       .check>img {
+           float: left;
+       }
+       
+       .social>h3 {
+           float: left;
+       }
+       
+       .yellow {
+           font: 8px CenturyGothic;
+           color: yellow;
        }
        /*----------------@media------------------*/
        
@@ -475,6 +544,9 @@
                top: 53%;
                left: 10.7%;
                padding: 0 0.4vw;
+           }
+           .aboutUs>input {
+               /*               font: 24px ;*/
            }
            .mySlides>input {
                font: 24px CenturyGothic;
