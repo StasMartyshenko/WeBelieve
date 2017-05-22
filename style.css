@@ -376,15 +376,15 @@
        .aboutFooter {
            background: #414146;
            display: flex;
-           /*    justify-content: center;*/
+           justify-content: space-around;
            flex-wrap: wrap;
-           /*   text-align: center;*/
+           padding: 0 60px;
        }
        
        .aboutUs {
            width: 400px;
-           height: 500px;
-           padding: 0 71.6px;
+           min-height: 500px;
+           /*           padding: 0 71.6px;*/
            font-family: CenturyGothic;
            color: #ffffff;
        }
@@ -407,9 +407,6 @@
        .aboutUs>input {
            cursor: pointer;
            font: 15px CenturyGothic;
-           /*           position: absolute;*/
-           /*           top: 28vw;*/
-           /*           left: 30.8vw;*/
            background: #000000;
            color: #ffffff;
            border-color: black;
@@ -420,8 +417,21 @@
        }
        
        .latestTweets {
-           width: 480px;
-           height: 500px;
+           width: 450px;
+           min-height: 500px;
+           font-family: CenturyGothic;
+           color: #ffffff;
+       }
+       
+       .latestTweets>h3 {
+           font-size: 18px;
+           padding: 19px 0;
+       }
+       
+       .latestTweets p {
+           font-size: 13px;
+           padding-left: 45px;
+           padding-bottom: 2px;
        }
        
        .colorYellow {
@@ -430,6 +440,21 @@
        
        .check>img {
            float: left;
+           padding-top: 5px;
+       }
+       
+       .CuteOnline {
+           padding-bottom: 30px;
+       }
+       
+       .check {
+           padding-bottom: 30px;
+       }
+       
+       .CuteOnline>img {
+           float: left;
+           padding-top: 5px;
+           margin-top: -10px;
        }
        
        .social>h3 {
@@ -439,6 +464,48 @@
        .yellow {
            font: 8px CenturyGothic;
            color: yellow;
+       }
+       
+       .social {
+           margin-top: 14px;
+       }
+       
+       .social>h3 {
+           padding: 5px 7px 0 0;
+       }
+       
+       .ContactInfo {
+           width: 330px;
+           min-height: 500px;
+           font-family: CenturyGothic;
+           color: #ffffff;
+       }
+       
+       .ContactInfo h3 {
+           font-size: 18px;
+           padding: 19px 0;
+       }
+       
+       .ContactInfo p {
+           font-size: 13px;
+           padding: 37px 0 0 15px;
+       }
+       
+       .ContactInfo img {
+           padding-top: 30px;
+       }
+       
+       .Contact {
+           font-size: 13px;
+           display: flex;
+       }
+       
+       .follow h3 {
+           padding-top: 50px;
+       }
+       
+       .follow p {
+           padding: 0;
        }
        /*----------------@media------------------*/
        
