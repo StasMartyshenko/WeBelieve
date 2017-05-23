@@ -224,7 +224,6 @@
        
        .textDesign>h2 {
            font: 500 2.1875vw CenturyGothic;
-           /*       font: 500 35px CenturyGothic;*/
            color: #424147;
            text-transform: uppercase;
            display: flex;
@@ -365,7 +364,6 @@
        .sl {
            max-width: 1500px;
            margin: 1vw auto;
-           /*           margin-bottom: 3.4vw;*/
        }
        
        .slick-slide img {
@@ -379,12 +377,12 @@
            justify-content: space-around;
            flex-wrap: wrap;
            padding: 0 60px;
+           margin-top: 120px;
        }
        
        .aboutUs {
            width: 400px;
            min-height: 500px;
-           /*           padding: 0 71.6px;*/
            font-family: CenturyGothic;
            color: #ffffff;
        }
@@ -506,6 +504,54 @@
        
        .follow p {
            padding: 0;
+       }
+       
+       .mail {
+           margin: -15px 0 0px 0;
+       }
+       
+       .mail input {
+           background: #414146;
+           border: 1.5px solid #414146;
+           border-bottom-color: yellow;
+           width: 225px;
+           border-radius: 3.5px;
+           outline: none;
+           font-size: 18px;
+       }
+       
+       .mail img {
+           position: relative;
+           top: 8.8px;
+           right: 5px;
+       }
+       
+       .footer {
+           min-height: 70px;
+           background: #000000;
+           color: #ffffff;
+           display: flex;
+           flex-wrap: wrap;
+       }
+       
+       .menuFooter>ul {
+           display: flex;
+           flex-wrap: wrap;
+           cursor: pointer;
+           margin-left: 70px;
+           margin-top: 25px;
+       }
+       
+       .copyright p {
+           font: 14px CenturyGothic;
+           padding-top: 28px;
+           padding-left: 110px;
+           padding-right: 110px;
+       }
+       
+       .menuFooter ul li {
+           font: 16px CenturyGothic;
+           margin-left: 90px;
        }
        /*----------------@media------------------*/
        
@@ -672,5 +718,16 @@
            }
            .pictDesign {
                margin-top: 17px;
+           }
+       }
+       
+       @media (max-width: 640px) {
+           .menuFooter>ul {
+               margin: 0 auto;
+           }
+           .copyright p {
+               padding: 0;
+               text-align: center;
+               padding-bottom: 10px;
            }
        }
